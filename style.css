@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  /* background-image: url(https://www.shutterstock.com/image-vector/abstract-technology-technological-design-high-260nw-1685283001.jpg); */
+  background-image: linear-gradient(
+    to left bottom,
+    rgb(153, 54, 54),
+    rgb(84, 182, 171),
+    rgba(24, 166, 50, 0.715)
+  );
+  background-size: cover;
+}
+
+.container {
+  width: 50%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: white;
+  gap: 2rem;
+}
+
+main,
+section {
+  width: 50%;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  gap: 10px;
+}
+
+.addTask {
+  width: 100%;
+  height: 100%;
+  padding: 2rem 1rem;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#addInput {
+  width: 60%;
+  padding: 0.5rem 2rem;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+#addBtn {
+  width: 20%;
+  padding: 0.5rem 1.5rem;
+  background-color: #140d4c;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+#taskList {
+  width: 100%;
+  min-height: 250px;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  color: black;
+  text-align: start;
+  overflow: auto;
+}
+
+.newTaskBox {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+  border-top: none;
+  padding: 10px;
+}
+
+.deleteBtn {
+  border: none;
+  background-color: transparent;
+}
+
+@media (max-width: 500px) {
+  .container,
+  main,
+  section {
+    width: 100%;
+    padding: 10px;
+  }
+}

@@ -3,9 +3,25 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css" type="text/css">
    <title>Todo List - Online Todo List</title>
 </head>
 <body>
-   <h1>Todo List</h1>
+   <div class="container">
+      <main>
+         <h1>To Do List</h1>
+         <div class="addTask">
+            <input id="addInput" name="taskToAdd" placeholder="Task to be done..." onchange="onChangeHandler(event)" type="text">
+            <button id="addBtn" onclick="onClickHandler()">Add</button>
+         </div>
+      </main>
+      <section>
+         <div id="taskList">
+
+         </div>
+      </section>
+   </div>
+
+   <script src="script.js"></script>
 </body>
 </html>
