@@ -10,9 +10,13 @@ const onClickHandler = () => {
   const addInput = document.querySelector("#addInput");
   const taskList = document.querySelector("#taskList");
   const taskContent = addInput.value;
+
   if (taskContent !== "") {
     const newTaskBox = document.createElement("span");
     newTaskBox.className = "newTaskBox";
+
+    const checkbox = document.createElement("input");
+    checkbox.className = "checkbox";
 
     const newTask = document.createElement("p");
     newTask.textContent = taskContent;

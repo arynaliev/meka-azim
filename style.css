@@ -10,13 +10,13 @@ body {
   display: flex;
   justify-content: center;
   padding: 2rem 0;
-  /* background-image: url(https://www.shutterstock.com/image-vector/abstract-technology-technological-design-high-260nw-1685283001.jpg); */
-  background-image: linear-gradient(
+  background-image: url(https://www.shutterstock.com/image-vector/abstract-technology-technological-design-high-260nw-1685283001.jpg);
+  /* background-image: linear-gradient(
     to left bottom,
     rgb(153, 54, 54),
     rgb(84, 182, 171),
     rgba(24, 166, 50, 0.715)
-  );
+  ); */
   background-size: cover;
 }
 
